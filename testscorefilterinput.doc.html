@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>TestScoreFilterInput</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Date">
+            <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Date
+            </a>
+        </li>
+        <li  title="DateTime">
+            <a href="datetime.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DateTime
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="JSON">
+            <a href="json.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JSON
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Interfaces</h4>
+    <ul>
+        <li  title="AdmissionCriteriumMutationQuery">
+            <a href="admissioncriteriummutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdmissionCriteriumMutationQuery
+            </a>
+        </li>
+        <li  title="AlumnusMutationQuery">
+            <a href="alumnusmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlumnusMutationQuery
+            </a>
+        </li>
+        <li  title="ApplicationDetailMutationQuery">
+            <a href="applicationdetailmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplicationDetailMutationQuery
+            </a>
+        </li>
+        <li  title="AttachmentMutationQueryType">
+            <a href="attachmentmutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AttachmentMutationQueryType
+            </a>
+        </li>
+        <li  title="AuthMutationQuery">
+            <a href="authmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuthMutationQuery
+            </a>
+        </li>
+        <li  title="AuthQuery">
+            <a href="authquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuthQuery
+            </a>
+        </li>
+        <li  title="AwardMutationQuery">
+            <a href="awardmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AwardMutationQuery
+            </a>
+        </li>
+        <li  title="CertificationMutationQueryType">
+            <a href="certificationmutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CertificationMutationQueryType
+            </a>
+        </li>
+        <li  title="CityQuery">
+            <a href="cityquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CityQuery
+            </a>
+        </li>
+        <li  title="CommentMutationQuery">
+            <a href="commentmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CommentMutationQuery
+            </a>
+        </li>
+        <li  title="ConstantMutationQuery">
+            <a href="constantmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConstantMutationQuery
+            </a>
+        </li>
+        <li  title="ConstantQuery">
+            <a href="constantquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConstantQuery
+            </a>
+        </li>
+        <li  title="ConsultantMutationQuery">
+            <a href="consultantmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConsultantMutationQuery
+            </a>
+        </li>
+        <li  title="ConsultantQuery">
+            <a href="consultantquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConsultantQuery
+            </a>
+        </li>
+        <li  title="ContentSectionMutationQuery">
+            <a href="contentsectionmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentSectionMutationQuery
+            </a>
+        </li>
+        <li  title="ContentSectionQuery">
+            <a href="contentsectionquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentSectionQuery
+            </a>
+        </li>
+        <li  title="ConversationMutationQuery">
+            <a href="conversationmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConversationMutationQuery
+            </a>
+        </li>
+        <li  title="ConversationQuery">
+            <a href="conversationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConversationQuery
+            </a>
+        </li>
+        <li  title="CountryQuery">
+            <a href="countryquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CountryQuery
+            </a>
+        </li>
+        <li  title="CourseMutationQueryType">
+            <a href="coursemutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CourseMutationQueryType
+            </a>
+        </li>
+        <li  title="CurrencyListQuery">
+            <a href="currencylistquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CurrencyListQuery
+            </a>
+        </li>
+        <li  title="DeadlineMutationQuery">
+            <a href="deadlinemutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeadlineMutationQuery
+            </a>
+        </li>
+        <li  title="EducationalInstitutionMutationQuery">
+            <a href="educationalinstitutionmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalInstitutionMutationQuery
+            </a>
+        </li>
+        <li  title="EducationalInstitutionQuery">
+            <a href="educationalinstitutionquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalInstitutionQuery
+            </a>
+        </li>
+        <li  title="EducationalQualificationMutationQuery">
+            <a href="educationalqualificationmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalQualificationMutationQuery
+            </a>
+        </li>
+        <li  title="EducationalQualificationQuery">
+            <a href="educationalqualificationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalQualificationQuery
+            </a>
+        </li>
+        <li  title="EiConsultantMutationQuery">
+            <a href="eiconsultantmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EiConsultantMutationQuery
+            </a>
+        </li>
+        <li  title="EnquiryMutationQuery">
+            <a href="enquirymutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EnquiryMutationQuery
+            </a>
+        </li>
+        <li  title="EventMutationQuery">
+            <a href="eventmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EventMutationQuery
+            </a>
+        </li>
+        <li  title="FavouriteMutationQueryType">
+            <a href="favouritemutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FavouriteMutationQueryType
+            </a>
+        </li>
+        <li  title="FeaturedUserMutationQueryType">
+            <a href="featuredusermutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FeaturedUserMutationQueryType
+            </a>
+        </li>
+        <li  title="FeedQuery">
+            <a href="feedquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FeedQuery
+            </a>
+        </li>
+        <li  title="FollowMutationQueryType">
+            <a href="followmutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowMutationQueryType
+            </a>
+        </li>
+        <li  title="HighSchoolQualificationMutationQuery">
+            <a href="highschoolqualificationmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                HighSchoolQualificationMutationQuery
+            </a>
+        </li>
+        <li  title="InviteUsersMutationQuery">
+            <a href="inviteusersmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InviteUsersMutationQuery
+            </a>
+        </li>
+        <li  title="LikeMutationQuery">
+            <a href="likemutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LikeMutationQuery
+            </a>
+        </li>
+        <li  title="NotificationMutation">
+            <a href="notificationmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotificationMutation
+            </a>
+        </li>
+        <li  title="PostMutationQuery">
+            <a href="postmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostMutationQuery
+            </a>
+        </li>
+        <li  title="PostQuery">
+            <a href="postquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostQuery
+            </a>
+        </li>
+        <li  title="ProgramApplicationMutationQuery">
+            <a href="programapplicationmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramApplicationMutationQuery
+            </a>
+        </li>
+        <li  title="ProgramApplicationQuery">
+            <a href="programapplicationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramApplicationQuery
+            </a>
+        </li>
+        <li  title="ProgramApplicationStatusMutationQuery">
+            <a href="programapplicationstatusmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramApplicationStatusMutationQuery
+            </a>
+        </li>
+        <li  title="ProgramMutationQuery">
+            <a href="programmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramMutationQuery
+            </a>
+        </li>
+        <li  title="ProgramQuery">
+            <a href="programquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramQuery
+            </a>
+        </li>
+        <li  title="ProgramResourceLinkMutationQuery">
+            <a href="programresourcelinkmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramResourceLinkMutationQuery
+            </a>
+        </li>
+        <li  title="ProgramStudentProfileMutationQuery">
+            <a href="programstudentprofilemutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramStudentProfileMutationQuery
+            </a>
+        </li>
+        <li  title="PublicationMutationQuery">
+            <a href="publicationmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublicationMutationQuery
+            </a>
+        </li>
+        <li  title="PublicationQuery">
+            <a href="publicationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublicationQuery
+            </a>
+        </li>
+        <li  title="ReferenceMutationQuery">
+            <a href="referencemutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReferenceMutationQuery
+            </a>
+        </li>
+        <li  title="SearchQuery">
+            <a href="searchquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SearchQuery
+            </a>
+        </li>
+        <li  title="ShareMutationQueryType">
+            <a href="sharemutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ShareMutationQueryType
+            </a>
+        </li>
+        <li  title="TestimonialMutationQueryType">
+            <a href="testimonialmutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestimonialMutationQueryType
+            </a>
+        </li>
+        <li  title="TestMutationQueryType">
+            <a href="testmutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestMutationQueryType
+            </a>
+        </li>
+        <li  title="TestQuery">
+            <a href="testquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestQuery
+            </a>
+        </li>
+        <li  title="TestScoreMutationQueryType">
+            <a href="testscoremutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestScoreMutationQueryType
+            </a>
+        </li>
+        <li  title="TopFigureMutationQueryType">
+            <a href="topfiguremutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopFigureMutationQueryType
+            </a>
+        </li>
+        <li  title="UnlockedUserQuery">
+            <a href="unlockeduserquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UnlockedUserQuery
+            </a>
+        </li>
+        <li  title="UnlockUserMutationQueryType">
+            <a href="unlockusermutationquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UnlockUserMutationQueryType
+            </a>
+        </li>
+        <li  title="UserMutationQuery">
+            <a href="usermutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserMutationQuery
+            </a>
+        </li>
+        <li  title="UserPreferenceMutationQuery">
+            <a href="userpreferencemutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserPreferenceMutationQuery
+            </a>
+        </li>
+        <li  title="UserQuery">
+            <a href="userquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserQuery
+            </a>
+        </li>
+        <li  title="VerifyEmailMutationQuery">
+            <a href="verifyemailmutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                VerifyEmailMutationQuery
+            </a>
+        </li>
+        <li  title="WorkExperienceMutationQuery">
+            <a href="workexperiencemutationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WorkExperienceMutationQuery
+            </a>
+        </li>
+        <li  title="WorkExperienceQuery">
+            <a href="workexperiencequery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WorkExperienceQuery
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Unions</h4>
+    <ul>
+        <li  title="EiAndUserUnion">
+            <a href="eianduserunion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EiAndUserUnion
+            </a>
+        </li>
+        <li  title="FavourableUnion">
+            <a href="favourableunion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FavourableUnion
+            </a>
+        </li>
+        <li  title="FollowableUnion">
+            <a href="followableunion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowableUnion
+            </a>
+        </li>
+        <li  title="PostAndCommentUnion">
+            <a href="postandcommentunion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostAndCommentUnion
+            </a>
+        </li>
+        <li  title="UnlockableUnion">
+            <a href="unlockableunion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UnlockableUnion
+            </a>
+        </li>
+        <li  title="UserProgramConsultantEi">
+            <a href="userprogramconsultantei.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserProgramConsultantEi
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="AdmissionCriteriumType">
+            <a href="admissioncriteriumtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdmissionCriteriumType
+            </a>
+        </li>
+        <li  title="AggregatePackageType">
+            <a href="aggregatepackagetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AggregatePackageType
+            </a>
+        </li>
+        <li  title="AlignmentType">
+            <a href="alignmenttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlignmentType
+            </a>
+        </li>
+        <li  title="AlumnusType">
+            <a href="alumnustype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlumnusType
+            </a>
+        </li>
+        <li  title="AlumnusTypeConnection">
+            <a href="alumnustypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlumnusTypeConnection
+            </a>
+        </li>
+        <li  title="AlumnusTypeEdge">
+            <a href="alumnustypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlumnusTypeEdge
+            </a>
+        </li>
+        <li  title="ApplicationDetailType">
+            <a href="applicationdetailtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplicationDetailType
+            </a>
+        </li>
+        <li  title="AttachmentType">
+            <a href="attachmenttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AttachmentType
+            </a>
+        </li>
+        <li  title="AuthType">
+            <a href="authtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuthType
+            </a>
+        </li>
+        <li  title="AwardType">
+            <a href="awardtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AwardType
+            </a>
+        </li>
+        <li  title="AwardTypeConnection">
+            <a href="awardtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AwardTypeConnection
+            </a>
+        </li>
+        <li  title="AwardTypeEdge">
+            <a href="awardtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AwardTypeEdge
+            </a>
+        </li>
+        <li  title="BaseType">
+            <a href="basetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BaseType
+            </a>
+        </li>
+        <li  title="CertificationType">
+            <a href="certificationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CertificationType
+            </a>
+        </li>
+        <li  title="CertificationTypeConnection">
+            <a href="certificationtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CertificationTypeConnection
+            </a>
+        </li>
+        <li  title="CertificationTypeEdge">
+            <a href="certificationtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CertificationTypeEdge
+            </a>
+        </li>
+        <li  title="CityListType">
+            <a href="citylisttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CityListType
+            </a>
+        </li>
+        <li  title="CityType">
+            <a href="citytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CityType
+            </a>
+        </li>
+        <li  title="CommentPermissionType">
+            <a href="commentpermissiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CommentPermissionType
+            </a>
+        </li>
+        <li  title="CommentType">
+            <a href="commenttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CommentType
+            </a>
+        </li>
+        <li  title="CommentTypeConnection">
+            <a href="commenttypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CommentTypeConnection
+            </a>
+        </li>
+        <li  title="CommentTypeEdge">
+            <a href="commenttypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CommentTypeEdge
+            </a>
+        </li>
+        <li  title="ConstantListType">
+            <a href="constantlisttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConstantListType
+            </a>
+        </li>
+        <li  title="ConstantMapType">
+            <a href="constantmaptype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConstantMapType
+            </a>
+        </li>
+        <li  title="ConstantType">
+            <a href="constanttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConstantType
+            </a>
+        </li>
+        <li  title="ConsultantType">
+            <a href="consultanttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConsultantType
+            </a>
+        </li>
+        <li  title="ContentSectionType">
+            <a href="contentsectiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentSectionType
+            </a>
+        </li>
+        <li  title="ContentSectionTypeConnection">
+            <a href="contentsectiontypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentSectionTypeConnection
+            </a>
+        </li>
+        <li  title="ContentSectionTypeEdge">
+            <a href="contentsectiontypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentSectionTypeEdge
+            </a>
+        </li>
+        <li  title="ConversationParticipantType">
+            <a href="conversationparticipanttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConversationParticipantType
+            </a>
+        </li>
+        <li  title="ConversationType">
+            <a href="conversationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConversationType
+            </a>
+        </li>
+        <li  title="ConversationTypeConnection">
+            <a href="conversationtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConversationTypeConnection
+            </a>
+        </li>
+        <li  title="ConversationTypeEdge">
+            <a href="conversationtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConversationTypeEdge
+            </a>
+        </li>
+        <li  title="CountryType">
+            <a href="countrytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CountryType
+            </a>
+        </li>
+        <li  title="CourseType">
+            <a href="coursetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CourseType
+            </a>
+        </li>
+        <li  title="CourseTypeConnection">
+            <a href="coursetypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CourseTypeConnection
+            </a>
+        </li>
+        <li  title="CourseTypeEdge">
+            <a href="coursetypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CourseTypeEdge
+            </a>
+        </li>
+        <li  title="DeadlineType">
+            <a href="deadlinetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeadlineType
+            </a>
+        </li>
+        <li  title="DeadlineTypeConnection">
+            <a href="deadlinetypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeadlineTypeConnection
+            </a>
+        </li>
+        <li  title="DeadlineTypeEdge">
+            <a href="deadlinetypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeadlineTypeEdge
+            </a>
+        </li>
+        <li  title="EducationalInstitutionInviteType">
+            <a href="educationalinstitutioninvitetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalInstitutionInviteType
+            </a>
+        </li>
+        <li  title="EducationalInstitutionInviteTypeConnection">
+            <a href="educationalinstitutioninvitetypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalInstitutionInviteTypeConnection
+            </a>
+        </li>
+        <li  title="EducationalInstitutionInviteTypeEdge">
+            <a href="educationalinstitutioninvitetypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalInstitutionInviteTypeEdge
+            </a>
+        </li>
+        <li  title="EducationalInstitutionListType">
+            <a href="educationalinstitutionlisttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalInstitutionListType
+            </a>
+        </li>
+        <li  title="EducationalInstitutionType">
+            <a href="educationalinstitutiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalInstitutionType
+            </a>
+        </li>
+        <li  title="EducationalQualificationListType">
+            <a href="educationalqualificationlisttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalQualificationListType
+            </a>
+        </li>
+        <li  title="EducationalQualificationType">
+            <a href="educationalqualificationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalQualificationType
+            </a>
+        </li>
+        <li  title="EducationalQualificationTypeConnection">
+            <a href="educationalqualificationtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalQualificationTypeConnection
+            </a>
+        </li>
+        <li  title="EducationalQualificationTypeEdge">
+            <a href="educationalqualificationtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalQualificationTypeEdge
+            </a>
+        </li>
+        <li  title="EiAndUserUnionConnection">
+            <a href="eianduserunionconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EiAndUserUnionConnection
+            </a>
+        </li>
+        <li  title="EiAndUserUnionEdge">
+            <a href="eianduserunionedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EiAndUserUnionEdge
+            </a>
+        </li>
+        <li  title="EiConsultantType">
+            <a href="eiconsultanttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EiConsultantType
+            </a>
+        </li>
+        <li  title="EventType">
+            <a href="eventtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EventType
+            </a>
+        </li>
+        <li  title="EventTypeConnection">
+            <a href="eventtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EventTypeConnection
+            </a>
+        </li>
+        <li  title="EventTypeEdge">
+            <a href="eventtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EventTypeEdge
+            </a>
+        </li>
+        <li  title="Facets">
+            <a href="facets.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Facets
+            </a>
+        </li>
+        <li  title="FavouriteType">
+            <a href="favouritetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FavouriteType
+            </a>
+        </li>
+        <li  title="FavouriteTypeConnection">
+            <a href="favouritetypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FavouriteTypeConnection
+            </a>
+        </li>
+        <li  title="FavouriteTypeEdge">
+            <a href="favouritetypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FavouriteTypeEdge
+            </a>
+        </li>
+        <li  title="FeeType">
+            <a href="feetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FeeType
+            </a>
+        </li>
+        <li  title="FollowType">
+            <a href="followtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowType
+            </a>
+        </li>
+        <li  title="FollowTypeConnection">
+            <a href="followtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowTypeConnection
+            </a>
+        </li>
+        <li  title="FollowTypeEdge">
+            <a href="followtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowTypeEdge
+            </a>
+        </li>
+        <li  title="HighSchoolQualificationType">
+            <a href="highschoolqualificationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                HighSchoolQualificationType
+            </a>
+        </li>
+        <li  title="LikeType">
+            <a href="liketype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LikeType
+            </a>
+        </li>
+        <li  title="MessageType">
+            <a href="messagetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MessageType
+            </a>
+        </li>
+        <li  title="MessageTypeConnection">
+            <a href="messagetypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MessageTypeConnection
+            </a>
+        </li>
+        <li  title="MessageTypeEdge">
+            <a href="messagetypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MessageTypeEdge
+            </a>
+        </li>
+        <li  title="NotificationType">
+            <a href="notificationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotificationType
+            </a>
+        </li>
+        <li  title="NotificationTypeConnection">
+            <a href="notificationtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotificationTypeConnection
+            </a>
+        </li>
+        <li  title="NotificationTypeEdge">
+            <a href="notificationtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NotificationTypeEdge
+            </a>
+        </li>
+        <li  title="PackageType">
+            <a href="packagetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PackageType
+            </a>
+        </li>
+        <li  title="PackageTypeConnection">
+            <a href="packagetypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PackageTypeConnection
+            </a>
+        </li>
+        <li  title="PackageTypeEdge">
+            <a href="packagetypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PackageTypeEdge
+            </a>
+        </li>
+        <li  title="PageInfo">
+            <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PageInfo
+            </a>
+        </li>
+        <li  title="PagingType">
+            <a href="pagingtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PagingType
+            </a>
+        </li>
+        <li  title="PostListType">
+            <a href="postlisttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostListType
+            </a>
+        </li>
+        <li  title="PostPermissionType">
+            <a href="postpermissiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostPermissionType
+            </a>
+        </li>
+        <li  title="PostType">
+            <a href="posttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostType
+            </a>
+        </li>
+        <li  title="PostTypeConnection">
+            <a href="posttypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostTypeConnection
+            </a>
+        </li>
+        <li  title="PostTypeEdge">
+            <a href="posttypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostTypeEdge
+            </a>
+        </li>
+        <li  title="ProgramApplicationListType">
+            <a href="programapplicationlisttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramApplicationListType
+            </a>
+        </li>
+        <li  title="ProgramApplicationType">
+            <a href="programapplicationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramApplicationType
+            </a>
+        </li>
+        <li  title="ProgramApplicationTypeConnection">
+            <a href="programapplicationtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramApplicationTypeConnection
+            </a>
+        </li>
+        <li  title="ProgramApplicationTypeEdge">
+            <a href="programapplicationtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramApplicationTypeEdge
+            </a>
+        </li>
+        <li  title="ProgramListType">
+            <a href="programlisttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramListType
+            </a>
+        </li>
+        <li  title="ProgramPermissionType">
+            <a href="programpermissiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramPermissionType
+            </a>
+        </li>
+        <li  title="ProgramStudentProfileType">
+            <a href="programstudentprofiletype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramStudentProfileType
+            </a>
+        </li>
+        <li  title="ProgramType">
+            <a href="programtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramType
+            </a>
+        </li>
+        <li  title="ProgramTypeConnection">
+            <a href="programtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramTypeConnection
+            </a>
+        </li>
+        <li  title="ProgramTypeEdge">
+            <a href="programtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramTypeEdge
+            </a>
+        </li>
+        <li  title="PublicationType">
+            <a href="publicationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublicationType
+            </a>
+        </li>
+        <li  title="PublicationTypeConnection">
+            <a href="publicationtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublicationTypeConnection
+            </a>
+        </li>
+        <li  title="PublicationTypeEdge">
+            <a href="publicationtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublicationTypeEdge
+            </a>
+        </li>
+        <li  title="ReferencePermissionType">
+            <a href="referencepermissiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReferencePermissionType
+            </a>
+        </li>
+        <li  title="ReferenceType">
+            <a href="referencetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReferenceType
+            </a>
+        </li>
+        <li  title="ReferenceTypeConnection">
+            <a href="referencetypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReferenceTypeConnection
+            </a>
+        </li>
+        <li  title="ReferenceTypeEdge">
+            <a href="referencetypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReferenceTypeEdge
+            </a>
+        </li>
+        <li  title="ResourceLinkType">
+            <a href="resourcelinktype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResourceLinkType
+            </a>
+        </li>
+        <li  title="SocialLinkType">
+            <a href="sociallinktype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SocialLinkType
+            </a>
+        </li>
+        <li  title="TestimonialType">
+            <a href="testimonialtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestimonialType
+            </a>
+        </li>
+        <li  title="TestimonialTypeConnection">
+            <a href="testimonialtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestimonialTypeConnection
+            </a>
+        </li>
+        <li  title="TestimonialTypeEdge">
+            <a href="testimonialtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestimonialTypeEdge
+            </a>
+        </li>
+        <li  title="TestScoreType">
+            <a href="testscoretype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestScoreType
+            </a>
+        </li>
+        <li  title="TestScoreTypeConnection">
+            <a href="testscoretypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestScoreTypeConnection
+            </a>
+        </li>
+        <li  title="TestScoreTypeEdge">
+            <a href="testscoretypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestScoreTypeEdge
+            </a>
+        </li>
+        <li  title="TestType">
+            <a href="testtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestType
+            </a>
+        </li>
+        <li  title="TestTypeConnection">
+            <a href="testtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestTypeConnection
+            </a>
+        </li>
+        <li  title="TestTypeEdge">
+            <a href="testtypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestTypeEdge
+            </a>
+        </li>
+        <li  title="TokenType">
+            <a href="tokentype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TokenType
+            </a>
+        </li>
+        <li  title="TopFigureType">
+            <a href="topfiguretype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopFigureType
+            </a>
+        </li>
+        <li  title="UnlockUserType">
+            <a href="unlockusertype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UnlockUserType
+            </a>
+        </li>
+        <li  title="UserLanguageType">
+            <a href="userlanguagetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserLanguageType
+            </a>
+        </li>
+        <li  title="UserListType">
+            <a href="userlisttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserListType
+            </a>
+        </li>
+        <li  title="UserPermissionType">
+            <a href="userpermissiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserPermissionType
+            </a>
+        </li>
+        <li  title="UserPreferenceType">
+            <a href="userpreferencetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserPreferenceType
+            </a>
+        </li>
+        <li  title="UserType">
+            <a href="usertype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserType
+            </a>
+        </li>
+        <li  title="UserTypeConnection">
+            <a href="usertypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTypeConnection
+            </a>
+        </li>
+        <li  title="UserTypeEdge">
+            <a href="usertypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserTypeEdge
+            </a>
+        </li>
+        <li  title="WorkExperienceListType">
+            <a href="workexperiencelisttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WorkExperienceListType
+            </a>
+        </li>
+        <li  title="WorkExperienceType">
+            <a href="workexperiencetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WorkExperienceType
+            </a>
+        </li>
+        <li  title="WorkExperienceTypeConnection">
+            <a href="workexperiencetypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WorkExperienceTypeConnection
+            </a>
+        </li>
+        <li  title="WorkExperienceTypeEdge">
+            <a href="workexperiencetypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WorkExperienceTypeEdge
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="AcceptInviteInput">
+            <a href="acceptinviteinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AcceptInviteInput
+            </a>
+        </li>
+        <li  title="AdmissionCriteriumInput">
+            <a href="admissioncriteriuminput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdmissionCriteriumInput
+            </a>
+        </li>
+        <li  title="AlumnusInput">
+            <a href="alumnusinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AlumnusInput
+            </a>
+        </li>
+        <li  title="ApplicationDetailInput">
+            <a href="applicationdetailinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplicationDetailInput
+            </a>
+        </li>
+        <li  title="ApplicationFilterInput">
+            <a href="applicationfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ApplicationFilterInput
+            </a>
+        </li>
+        <li  title="AttachmentInputType">
+            <a href="attachmentinputtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AttachmentInputType
+            </a>
+        </li>
+        <li  title="AwardInput">
+            <a href="awardinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AwardInput
+            </a>
+        </li>
+        <li  title="CertificationInput">
+            <a href="certificationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CertificationInput
+            </a>
+        </li>
+        <li  title="CommentInput">
+            <a href="commentinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CommentInput
+            </a>
+        </li>
+        <li  title="ConstantFilterInput">
+            <a href="constantfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConstantFilterInput
+            </a>
+        </li>
+        <li  title="ConstantInput">
+            <a href="constantinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConstantInput
+            </a>
+        </li>
+        <li  title="ConsultantInput">
+            <a href="consultantinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConsultantInput
+            </a>
+        </li>
+        <li  title="ContentSectionInput">
+            <a href="contentsectioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContentSectionInput
+            </a>
+        </li>
+        <li  title="ConversationParticipantInput">
+            <a href="conversationparticipantinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ConversationParticipantInput
+            </a>
+        </li>
+        <li  title="CourseInput">
+            <a href="courseinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CourseInput
+            </a>
+        </li>
+        <li  title="DateRangeFilterInput">
+            <a href="daterangefilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DateRangeFilterInput
+            </a>
+        </li>
+        <li  title="DeadlineInput">
+            <a href="deadlineinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeadlineInput
+            </a>
+        </li>
+        <li  title="EducationalInstitutionFilterInput">
+            <a href="educationalinstitutionfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalInstitutionFilterInput
+            </a>
+        </li>
+        <li  title="EducationalInstitutionInput">
+            <a href="educationalinstitutioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalInstitutionInput
+            </a>
+        </li>
+        <li  title="EducationalQualificationInput">
+            <a href="educationalqualificationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EducationalQualificationInput
+            </a>
+        </li>
+        <li  title="EiConsultantInput">
+            <a href="eiconsultantinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EiConsultantInput
+            </a>
+        </li>
+        <li  title="EnquiryInput">
+            <a href="enquiryinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EnquiryInput
+            </a>
+        </li>
+        <li  title="EventInput">
+            <a href="eventinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EventInput
+            </a>
+        </li>
+        <li  title="FollowInput">
+            <a href="followinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FollowInput
+            </a>
+        </li>
+        <li  title="HighSchoolQualificationInput">
+            <a href="highschoolqualificationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                HighSchoolQualificationInput
+            </a>
+        </li>
+        <li  title="InviteUserInput">
+            <a href="inviteuserinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InviteUserInput
+            </a>
+        </li>
+        <li  title="LanguageProficiencyFilterInput">
+            <a href="languageproficiencyfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LanguageProficiencyFilterInput
+            </a>
+        </li>
+        <li  title="LikeInput">
+            <a href="likeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LikeInput
+            </a>
+        </li>
+        <li  title="PostInput">
+            <a href="postinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PostInput
+            </a>
+        </li>
+        <li  title="ProgramApplicationInput">
+            <a href="programapplicationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramApplicationInput
+            </a>
+        </li>
+        <li  title="ProgramFilterInput">
+            <a href="programfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramFilterInput
+            </a>
+        </li>
+        <li  title="ProgramInput">
+            <a href="programinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramInput
+            </a>
+        </li>
+        <li  title="ProgramStudentProfileInput">
+            <a href="programstudentprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ProgramStudentProfileInput
+            </a>
+        </li>
+        <li  title="PublicationInput">
+            <a href="publicationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PublicationInput
+            </a>
+        </li>
+        <li  title="RangeFilterInput">
+            <a href="rangefilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RangeFilterInput
+            </a>
+        </li>
+        <li  title="ReferenceInput">
+            <a href="referenceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ReferenceInput
+            </a>
+        </li>
+        <li  title="ResourceLinkInput">
+            <a href="resourcelinkinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ResourceLinkInput
+            </a>
+        </li>
+        <li  title="ShareInput">
+            <a href="shareinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ShareInput
+            </a>
+        </li>
+        <li  title="SortFilterInput">
+            <a href="sortfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SortFilterInput
+            </a>
+        </li>
+        <li  title="TestimonialInput">
+            <a href="testimonialinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestimonialInput
+            </a>
+        </li>
+        <li  title="TestInput">
+            <a href="testinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestInput
+            </a>
+        </li>
+        <li class="slds-is-active" title="TestScoreFilterInput">
+            <a href="testscorefilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestScoreFilterInput
+            </a>
+        </li>
+        <li  title="TestScoreInput">
+            <a href="testscoreinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TestScoreInput
+            </a>
+        </li>
+        <li  title="TopFigureInput">
+            <a href="topfigureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TopFigureInput
+            </a>
+        </li>
+        <li  title="UserFilterInput">
+            <a href="userfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserFilterInput
+            </a>
+        </li>
+        <li  title="UserInput">
+            <a href="userinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInput
+            </a>
+        </li>
+        <li  title="UserPreferenceInput">
+            <a href="userpreferenceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserPreferenceInput
+            </a>
+        </li>
+        <li  title="WorkExperienceInput">
+            <a href="workexperienceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WorkExperienceInput
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
+        <h1 class="slds-text-heading--large">TestScoreFilterInput</h1>
+        <div class="slds-text-body--regular"></div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">input</span> <span class="identifier">TestScoreFilterInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="meta">test_id</span>: <a class="support type" href="int.doc.html">Int</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">min_score</span>: <a class="support type" href="int.doc.html">Int</a></span></li></span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="educationalinstitutionfilterinput.doc.html" title="EducationalInstitutionFilterInput - ">EducationalInstitutionFilterInput<em>null</em></a><li><li><a href="programfilterinput.doc.html" title="ProgramFilterInput - ">ProgramFilterInput<em>null</em></a><li><li><a href="userfilterinput.doc.html" title="UserFilterInput - ">UserFilterInput<em>null</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>
